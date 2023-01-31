@@ -11,15 +11,13 @@
 
 </body>
 
-//remove duplicate values in an Array
+//remove duplicate values in an Array or find unique values in arr
 //1.filter() & indexOf()
 //2.set & [...](spread operator)
 <script>
 let arr = [1,2,3,4,5,3,5];
-let uArr= arr.filter((v,i) => {
-return arr.indexOf(v)!==i;
+let uArr= [... new Set(arr)];
 
-})
 console.log(uArr)
 
 </script>
